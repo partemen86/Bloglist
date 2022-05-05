@@ -1,0 +1,30 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhdmxvIiwiaWQiOiI2MWJiOTFiNTMzMWQ5OWJkY2Y2ZTcwZTgiLCJpYXQiOjE2Mzk2ODI1MDB9.lkIf9Hyx6BWYzVN9JwrjZYeIj0vXphX63rmrafjvraI
+
+{
+  "author": "Jenny",
+  "title": "My First Blog",
+  "url": "urls"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhdmxvIiwiaWQiOiI2MWJhYWQ1MmQ5MzcxODU2NGEwYTAxMTkiLCJpYXQiOjE2Mzk2MjQwMzR9.T7DpUoRStuMqEcRV814JAdcd9t3GGCgeRSFsj4UYaGE
+
+{
+  "author": "David",
+  "title": "My Second Blog",
+  "url": "urls"
+}
+###
+
+GET http://localhost:3003/api/blogs/
+
+###
+GET http://localhost:3003/api/blogs/61baad7bd93718564a0a0126
+###
+
+DELETE http://localhost:3003/api/blogs/61baad7bd93718564a0a0126
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBhdmxvIiwiaWQiOiI2MWJhYWQ1MmQ5MzcxODU2NGEwYTAxMTkiLCJpYXQiOjE2Mzk2MjQwMzR9.T7DpUoRStuMqEcRV814JAdcd9t3GGCgeRSFsj4UYaGE
